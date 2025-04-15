@@ -1,0 +1,143 @@
+/* Styles gÃ©nÃ©raux */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(to bottom, #e0f7fa, #ffffff); 
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Titre principal */
+h1 {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #0077b6; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #005f7f; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: normal;
+  color: #181919; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+
+p {
+    font-size: 1.2em;
+    max-width: 1000px; /* AugmentÃ© pour plus d'espace */
+    margin: 0 auto 20px;
+    background: rgba(255, 255, 255, 0.85); /* Plus opaque pour mieux ressortir */
+    padding: 30px; /* Plus d'espace interne */
+    border-radius: 12px; /* Coins plus arrondis */
+    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.08); /* Ombre plus visible */
+}
+/* Style de la barre de navigation */
+nav {
+    background: transparent;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    text-align: center;
+    z-index: 1000;
+}
+
+/* Style des liens du menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+}
+
+/* Effet au survol */
+nav ul li a:hover {
+    color: #001eff; /* Couleur dorée */
+}
+
+/* Footer */
+.foot {
+    display: flex;
+    justify-content: space-around; /* RÃ©partit l'espace entre les sections */
+    align-items: flex-start; /* Aligne les sections en haut */
+    background-color: #f8f9fa; /* Couleur de fond */
+    padding: 20px;
+    border-top: 2px solid #ccc;
+}
+
+.foot div {
+    flex: 1; /* Chaque section prend une largeur Ã©gale */
+    text-align: center; /* Centre le texte dans chaque section */
+}
+
+.foot span {
+    font-weight: bold;
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px; /* Espacement sous le titre */
+}
+
+.foot ul {
+    list-style: none;
+    padding: 0;
+}
+
+.foot li {
+    margin: 5px 0;
+}
+
+.foot a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.foot a:hover {
+    text-decoration: underline;
+}
+
+
+/* Adaptation mobile */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    p {
+        font-size: 1.1em;
+        max-width: 90%;
+        padding: 15px;
+    }
+}

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Prévision des températures de la semaine " company="" webLink="http://" view-date="2025-03-14" view-index="0" gantt-divider-location="321" resource-divider-location="300" version="3.3.3312" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="101" order="0"/>
+        <field id="tpd4" name="Date de début" width="101" order="1"/>
+        <field id="tpd5" name="Date de fin" width="103" order="2"/>
+        <field id="tpd15" name="Notes" width="20" order="3"/>
+        <option id="taskLabelUp" value="resources"/>
+        <option id="taskLabelDown" value="name"/>
+        <option id="taskLabelLeft" value=""/>
+        <option id="taskLabelRight" value="length"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="filter.dueTodayTasks" value="false"/>
+        <option id="filter.overdueTasks" value="false"/>
+        <option id="filter.inProgressTodayTasks" value="false"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="199" order="0"/>
+        <field id="1" name="Rôle par défaut" width="82" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" uid="2df3b4646cfb49b6aa24032ac785818e" name="Analyse du sujet et compréhension des exigences du proje" meeting="false" start="2025-03-21" duration="2" complete="0" expand="true">
+            <depend id="1" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" uid="cf7ffe59592c42ca8612041a94d62b1f" name="Intégration d’une API JSON /XML" meeting="false" start="2025-03-25" duration="1" complete="0" expand="true">
+            <depend id="2" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="2" uid="5c98e6d87b594c9cbd84db8103b22e3c" name="Implémentation de la page &quot;tech&quot;" meeting="false" start="2025-03-26" duration="1" complete="0" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" uid="9a66972cda9344ad862a19eef1c4d9ab" name="Implémentation de la carte interactive" meeting="false" start="2025-03-27" duration="1" complete="0" expand="true">
+            <depend id="4" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="4" uid="bb4360413e8340c78acf2ea9d48562b3" name="Intégration des données météo" meeting="false" start="2025-03-28" duration="2" complete="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" uid="8812b675c1c445718ab5a2079043b59d" name="Stockage CSV des villes consultées" meeting="false" start="2025-04-01" duration="2" complete="0" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" uid="d07f17dc16c1448a9aa5af7d756decbb" name="Cookies pour mémorisation des dernières ville" meeting="false" start="2025-04-03" duration="2" complete="0" expand="true">
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="7" uid="aac33ab9adba4d1b83f9f2285779e0b5" name="Histogramme des villes les plus consultées" meeting="false" start="2025-04-07" duration="1" complete="0" expand="true">
+            <depend id="8" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="8" uid="71b5d93c986c42198e13ffa691f817f1" name="Image aléatoire sur la page d'accueil" meeting="false" start="2025-04-08" duration="1" complete="0" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" uid="533095b8bcb44504b3de8446dc4afb07" name="Mode jour/nuit avec cookie" meeting="false" start="2025-04-09" duration="2" complete="0" expand="true">
+            <depend id="10" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="10" uid="1132c66bf42640d6b1b2734f14ac5b32" name="Tests unitaires et corrections" meeting="false" start="2025-04-11" duration="2" complete="0" expand="true">
+            <depend id="11" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="11" uid="f53b8769b989446899f2aa0b13d9387b" name="Rédaction de la documentation " meeting="false" start="2025-04-15" duration="1" complete="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" uid="59ef4c7cd4824a8aa96c8e389549eca5" name="Finalisation et mise en ligne" meeting="false" start="2025-04-16" duration="3" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="ISSAD Lisa" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="ACHAB Ouardia" function="Default:1" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="2" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="1" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="8" resource-id="1" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="10" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="1" function="Default:1" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>

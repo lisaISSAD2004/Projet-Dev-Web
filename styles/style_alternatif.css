@@ -1,0 +1,35 @@
+.mode {
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espace entre les boutons */
+}
+
+.mode a {
+    display: inline-flex; /* Flex pour centrer les images dans les liens */
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(45deg, #e0d97f, #e6de72);
+    color: #1B191B;
+    text-decoration: none; /* Enlever le soulignement des liens */
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.mode a:hover {
+    background: linear-gradient(45deg, #e6de72, #e0d97f);
+    color: #656463;
+}
+
+.mode a img {
+    width: 20px;
+    height: 20px;
+}
+body{
+    background-color: black;
+    color:white;
+}
