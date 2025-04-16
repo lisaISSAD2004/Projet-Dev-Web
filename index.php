@@ -126,7 +126,7 @@ if ($forecastData && isset($forecastData['current'])) {
 </aside>
 
 <!-- Section des boutons de navigation -->
-<section class="navigation-buttons">
+<div class="navigation-buttons">
     <div class="button-container">
         <a href="previsions.php" class="nav-button">
             <span class="icon">🔍</span> Rechercher la météo par ville
@@ -140,6 +140,6 @@ if ($forecastData && isset($forecastData['current'])) {
             <span class="icon">⚙</span> Page technique
         </a>
     </div>
-</section>
+</div>
 
 <?php include("./include/footer.inc.php"); ?>

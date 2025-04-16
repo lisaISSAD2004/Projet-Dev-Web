@@ -13,7 +13,10 @@ body {
     padding: 0;
 }
 
-
+#map {
+    background: none !important;
+  }
+  
 /* Header */
 header {
     background: transparent;

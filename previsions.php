@@ -34,24 +34,6 @@ $selectedRegion = $_GET['region'] ?? null;
 $selectedDepartement = $_GET['departement'] ?? null;
 $selectedVille = $_GET['ville'] ?? null;
 
-// Vérifie que le paramètre "ville" est bien présent dans l'URL
-if (isset($_GET['ville']) && !empty($_GET['ville'])) {
-    $villeCode = $_GET['ville'];
-
-    // Enregistre la visite et le cookie
-    logCityVisit($villeCode);
-    setCityCookie($villeCode);
-
-    // Récupérer les noms de villes
-    $cityNames = loadCityNames();
-    $villeNom = $cityNames[$villeCode] ?? "Ville inconnue";
-// Affichage des prévisions météo détaillées pour la ville sélectionnée
-    // Vous pouvez implémenter cette partie en fonction de votre logique spécifique.
-
-} else {
-        // Affichage d'un message lorsque aucune ville n'est sélectionnée
-    echo "<p>Aucune ville sélectionnée.</p>";
-}
 // Vérification si l'utilisateur arrive sur la page d'accueil sans paramètres
 if (empty($_GET['region']) && empty($_GET['departement']) && empty($_GET['ville'])) {
     // Récupérer la dernière ville consultée depuis le cookie

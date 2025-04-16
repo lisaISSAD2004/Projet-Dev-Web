@@ -468,18 +468,13 @@ function getPHPFiles($directory) {
  * @return string Le titre de la page.
  */
 function getPageTitle($file) {
-    // Vérifier si le fichier existe
-    if (!file_exists($file)) {
-        return ucfirst(pathinfo($file, PATHINFO_FILENAME));
-    }
-    
     $content = file_get_contents($file);
-   
-    // Expression régulière pour capturer la valeur de $pageTitle
-    if (preg_match('/\$pageTitle\s*=\s*(["\'])(.?)\1\s;/', $content, $matches)) {
+    
+    // Expression régulière corrigée pour capturer tout le contenu entre guillemets/apostrophes
+    if (preg_match('/\$pageTitle\s*=\s*(["\'])(.*?)\1/', $content, $matches)) {
         return trim($matches[2]);
     } else {
-        // Si le titre n'est pas trouvé, utiliser le nom du fichier
+        // Fallback si pas trouvé
         $title = pathinfo($file, PATHINFO_FILENAME);
         return ucfirst(str_replace('-', ' ', $title));
     }
